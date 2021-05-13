@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 #%doc Readme.md
 # For noarch packages: sitelib
 %{python3_sitelib}/%{srcname}/
-%{python3_sitelib}/%{srcname}-%{version}-py%{python3_version}.egg-info
+%{python3_sitelib}/%{srcname}-%{version}-py%{python3_version}.egg-info/
 
 
 %changelog
