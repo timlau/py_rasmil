@@ -7,7 +7,7 @@ Version:        1.0.0
 Release:        1%{?dist}
 Summary:        Misc Python Library
 License:        GPLv3+
-URL:            https://worldoftim.rasmil.dk
+URL:            https://github.com/timlau/py_rasmil
 Source0:        %{srcname}-%{version}.tar.gz
 
 BuildArch:      noarch
@@ -41,9 +41,8 @@ rm -rf $RPM_BUILD_ROOT
 %py3_install
 
 %files -n  python%{python3_pkgversion}-%{srcname}
-#%license LICENSE
-#%doc Readme.md
-# For noarch packages: sitelib
+%license LICENSE
+%doc README.md
 %{python3_sitelib}/%{srcname}/
 %{python3_sitelib}/%{srcname}-%{version}-py%{python3_version}.egg-info/
 
