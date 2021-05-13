@@ -37,8 +37,6 @@ class Xfconf:
 
     def set_property(self, channel: str, proberty: str, value):
         """ Write a Xfconf property"""
-        if type(value) != type(GLib.Variant):
-            raise ValueError("Value must be Glib.Variant")
         self.proxy.SetProperty(channel, proberty, value)
 
     def get_all_properties(self, channel:str, property_base:str):

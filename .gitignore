@@ -2,5 +2,4 @@ MANIFEST
 build/
 dist/
 src/*.egg-info/
-
-
+src/rasmil/__pycache__/
