@@ -23,6 +23,8 @@ clean:
 	-rm -rf dist
 	-rm -rf BUILDROOT
 
+rpms: dist
+	cp dist/rasmil-1.0.0.tar.gz ~/rpmbuild/SOURCES/.
+	rpmbuild -ba python-rasmil.spec
 
-
-.PHONY: all build install clean
+.PHONY: all build install clean dist rpms

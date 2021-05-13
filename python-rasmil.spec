@@ -25,10 +25,7 @@ Misc Python Library
 Summary:        %{summary}
 %{?python_provide:%python_provide python3-%{srcname}}
 
-%if %{undefined python_enable_dependency_generator} && %{undefined python_disable_dependency_generator}
-# Put manual requires here:
-# Requires:       python%{python3_pkgversion}-foo
-%endif
+Requires:       xfconf
 
 %description -n python%{python3_pkgversion}-%{srcname}
 Misc Python Library
