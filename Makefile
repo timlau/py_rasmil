@@ -10,7 +10,7 @@ build:
 	$(PYTHON) setup.py build
 
 install: 
-	$(PYTHON) setup.py install --skip-build --root $(DESTDIR) 
+	$(PYTHON) setup.py install 
 
 
 dist:
