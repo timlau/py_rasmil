@@ -85,7 +85,6 @@ class Colors:
          self._pretty_names = []
          for name in _MATERIAL_COLORS:
              iname = name.lower()
-             print(f'{name=}')
              shade = Shade(iname, _MATERIAL_COLORS[name])
              self._colors[iname] = shade
              self._pretty_names.append(name)

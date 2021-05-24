@@ -3,7 +3,7 @@
 %global srcname rasmil
 
 Name:           python-rasmil
-Version:        1.0.0
+Version:        1.0.1
 Release:        1%{?dist}
 Summary:        Misc Python Library
 License:        GPLv3+
@@ -26,6 +26,7 @@ Summary:        %{summary}
 %{?python_provide:%python_provide python3-%{srcname}}
 
 Requires:       xfconf
+Requires:       python3-dasbus
 
 %description -n python%{python3_pkgversion}-%{srcname}
 Misc Python Library
@@ -48,5 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon May 24 2021 Tim Lauridsen <tla@rasmil.dk>
+- bumped release to 1.0.1
 * Thu May 13 2021 Tim Lauridsen <tla@rasmil.dk>
 - initial spec 
