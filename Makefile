@@ -22,6 +22,9 @@ clean:
 	-rm -rf build
 	-rm -rf dist
 	-rm -rf BUILDROOT
+	-rm -rf src/*egg-info
+	-rm -rf src/__pycache__
+
 
 rpms: dist
 	cp dist/rasmil-1.0.0.tar.gz ~/rpmbuild/SOURCES/.
