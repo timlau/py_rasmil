@@ -11,13 +11,17 @@ Class Xfconf : Library to access Xfce conf
 
 Contains Google Material Design color palettes
 
+https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+
+
 **USAGE:**
 
-MATERIAL.<ColorName>.Shade<ShadeValue>
+`MATERIAL.<ColorName>.Shade<ShadeValue>`
 
-MATERIAL.colors             : Gives a list of available color names
-
-MATERIAL.<ColorName>.shades : Returns a list of available shades for a give color
+Methods                       | Description
+----------------------------- | ------------------------------------------------------
+`MATERIAL.colors`             | Gives a list of available color names
+`MATERIAL.<ColorName>.shades` | Returns a list of available shades for a give color
 
 **test.py**
 ```python
