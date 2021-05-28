@@ -26,8 +26,11 @@ XFCONF = DBusServiceIdentifier(
 )
 
 # Classes
+
+
 class Xfconf:
     """Wrapper class for the org.xfce.Xfconf Dbus object"""
+
     def __init__(self):
         self.proxy = XFCONF.get_proxy()
 
@@ -39,10 +42,8 @@ class Xfconf:
         """ Write a Xfconf property"""
         self.proxy.SetProperty(channel, proberty, value)
 
-    def get_all_properties(self, channel:str, property_base:str):
+    def get_all_properties(self, channel: str, property_base: str):
         """ List all properties under a give property base
         return 
         """
         return self.proxy.GetAllProperties(channel, property_base)
-
-
