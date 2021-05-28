@@ -17,7 +17,6 @@
 
 from dasbus.connection import SessionMessageBus
 from dasbus.identifier import DBusServiceIdentifier
-from gi.repository import GLib
 
 # Constants
 XFCONF = DBusServiceIdentifier(
