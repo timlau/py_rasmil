@@ -4,8 +4,16 @@
 
 ### rasmil.xfce
 
-Class Xfconf : Library to access Xfce conf
+class Xfconf : Library to access Xfce conf
 
+### rasmil.widgets
+contains custom gtk3 widgets
+
+class CircularProgressBar : an Circular ProgressBar widget with 2 lines of text in the center with customizable fonts
+
+![alt text][progress]
+
+[progress]: docs/circular.png "Circular ProgressBar"
 
 ### rasmil.materials
 
