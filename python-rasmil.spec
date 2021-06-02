@@ -8,7 +8,7 @@ Release:        1%{?dist}
 Summary:        Misc Python Library
 License:        GPLv3+
 URL:            https://github.com/timlau/py_rasmil
-Source0:        https://github.com/timlau/py_rasmil/archive/refs/tags/RASMIL-%{version}.zip
+Source0:        https://github.com/timlau/py_rasmil/archive/refs/tags/RASMIL-%{version}.tar.gz
 
 BuildArch:      noarch
 
@@ -33,7 +33,7 @@ Requires:       python3-gobject
 Misc Python Library
 
 %prep
-%autosetup 
+%autosetup -n rasmil-%{version}
 
 %build
 %py3_build
@@ -46,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 %license LICENSE
 %doc README.md
 %{python3_sitelib}/%{srcname}/
-%{python3_sitelib}/python_%{srcname}-%{version}-py%{python3_version}.egg-info/
+%{python3_sitelib}/%{srcname}-%{version}-py%{python3_version}.egg-info/
 
 
 %changelog

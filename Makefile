@@ -29,7 +29,10 @@ clean:
 
 
 rpms: dist
-	cp dist/$(APPNAME)-$(VERSION).tar.gz ~/rpmbuild/SOURCES/.
+	cp dist/rasmil-$(VERSION).tar.gz ~/rpmbuild/SOURCES/RASMIL-$(VERSION).tar.gz
 	rpmbuild -ba python-rasmil.spec
 
-.PHONY: all build install clean dist rpms
+copr: rpms
+	copr-cli build rasmil ~/rpmbuild/SRPMS/$(APPNAME)-$(VERSION)*.src.rpm
+
+.PHONY: all build install clean dist rpms copr
