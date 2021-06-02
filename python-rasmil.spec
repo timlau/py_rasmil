@@ -3,7 +3,7 @@
 %global srcname rasmil
 
 Name:           python-rasmil
-Version:        1.0.1
+Version:        1.0.2
 Release:        1%{?dist}
 Summary:        Misc Python Library
 License:        GPLv3+
@@ -27,6 +27,7 @@ Summary:        %{summary}
 
 Requires:       xfconf
 Requires:       python3-dasbus
+Requires:       python3-gobject
 
 %description -n python%{python3_pkgversion}-%{srcname}
 Misc Python Library
@@ -49,6 +50,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Wed Jun 2 2021 Tim Lauridsen <tla@rasmil.dk>
+- bumped release to 1.0.2
+- added widgets module with custom gtk3 widgets
 * Mon May 24 2021 Tim Lauridsen <tla@rasmil.dk>
 - bumped release to 1.0.1
 * Thu May 13 2021 Tim Lauridsen <tla@rasmil.dk>
