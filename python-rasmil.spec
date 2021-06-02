@@ -8,7 +8,7 @@ Release:        1%{?dist}
 Summary:        Misc Python Library
 License:        GPLv3+
 URL:            https://github.com/timlau/py_rasmil
-Source0:        %{name}-%{version}.tar.gz
+Source0:        https://github.com/timlau/py_rasmil/archive/refs/tags/RASMIL-%{version}.zip
 
 BuildArch:      noarch
 
