@@ -4,7 +4,7 @@
 
 Name:           python-rasmil
 Version:        1.0.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Misc Python Library
 License:        GPLv3+
 URL:            https://github.com/timlau/py_rasmil
@@ -33,7 +33,7 @@ Requires:       python3-gobject
 Misc Python Library
 
 %prep
-%autosetup -n rasmil-%{version}
+%autosetup -n py_rasmil-RASMIL-%{version}
 
 %build
 %py3_build
